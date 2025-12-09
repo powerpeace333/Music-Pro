@@ -1,0 +1,74 @@
+<main class="main-content">
+    <div class="header">
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" id="search-input" placeholder="Buscar canciones, artistas, álbumes...">
+        </div>
+        
+        <div class="user-info">
+            <div class="user-avatar" id="user-avatar">
+                <span id="user-initials">U</span>
+            </div>
+        </div>
+    </div>
+    
+    <h1 class="page-title">Descubrir Música</h1>
+    
+    <!-- Sección de nuevos lanzamientos -->
+    <div class="section-title">
+        <h2>Nuevos Lanzamientos</h2>
+        <a href="#" class="see-all">Ver todo</a>
+    </div>
+    
+    <div class="cards-grid" id="new-releases">
+        <!-- Canciones nuevas cargadas dinámicamente -->
+    </div>
+    
+    <!-- Sección de géneros -->
+    <div class="section-title">
+        <h2>Géneros y Estados de Ánimo</h2>
+        <a href="#" class="see-all">Ver todo</a>
+    </div>
+    
+    <div class="cards-grid" id="genres">
+        <!-- Géneros cargados dinámicamente -->
+        <div class="card" data-genre="pop">
+            <div style="background: linear-gradient(to right, #FF375F, #FF6B9D); height: 120px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                <i class="fas fa-guitar" style="font-size: 40px; color: white;"></i>
+            </div>
+            <h3 class="card-title">Pop</h3>
+            <p class="card-subtitle">Los éxitos más populares</p>
+        </div>
+        <div class="card" data-genre="rock">
+            <div style="background: linear-gradient(to right, #6A11CB, #2575FC); height: 120px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                <i class="fas fa-guitar" style="font-size: 40px; color: white;"></i>
+            </div>
+            <h3 class="card-title">Rock</h3>
+            <p class="card-subtitle">Clásicos y modernos</p>
+        </div>
+        <div class="card" data-genre="hiphop">
+            <div style="background: linear-gradient(to right, #11998e, #38EF7D); height: 120px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                <i class="fas fa-microphone" style="font-size: 40px; color: white;"></i>
+            </div>
+            <h3 class="card-title">Hip Hop</h3>
+            <p class="card-subtitle">Rap y trap</p>
+        </div>
+        <div class="card" data-genre="electronic">
+            <div style="background: linear-gradient(to right, #FFA62E, #EA4C89); height: 120px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                <i class="fas fa-headphones" style="font-size: 40px; color: white;"></i>
+            </div>
+            <h3 class="card-title">Electrónica</h3>
+            <p class="card-subtitle">Para fiestas y más</p>
+        </div>
+    </div>
+    
+    <!-- Sección de playlists recomendadas -->
+    <div class="section-title">
+        <h2>Playlists Recomendadas para ti</h2>
+        <a href="#" class="see-all">Ver todo</a>
+    </div>
+    
+    <div class="cards-grid" id="recommended-playlists">
+        <!-- Playlists recomendadas cargadas dinámicamente -->
+    </div>
+</main>
