@@ -6,7 +6,6 @@
     <title>Music Pro - Iniciar Sesión</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Estilos del login (similares a los del index, pero solo para el login) */
         * {
             margin: 0;
             padding: 0;
@@ -262,7 +261,7 @@
     </div>
 
     <script>
-        // Sistema de almacenamiento local (igual que en index.html)
+        // Sistema de almacenamiento local
         class StorageManager {
             constructor() {
                 if (!localStorage.getItem('musicProData')) {
@@ -276,9 +275,18 @@
                         { id: 1, username: "admin", password: "admin123", name: "Administrador", isAdmin: true },
                         { id: 2, username: "usuario", password: "123456", name: "Usuario Demo", isAdmin: false }
                     ],
-                    artists: [],
-                    playlists: [],
-                    tracks: [],
+                    artists: [
+                        { id: 1, name: "The Weeknd", genre: "R&B/Pop", followers: 43500000, image: "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+                        { id: 2, name: "Taylor Swift", genre: "Pop/Country", followers: 52300000, image: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" }
+                    ],
+                    playlists: [
+                        { id: 1, name: "Éxitos del Verano", creator: "Music Pro", tracks: 25, image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+                        { id: 2, name: "Rock Clásico", creator: "Music Pro", tracks: 30, image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" }
+                    ],
+                    tracks: [
+                        { id: 1, title: "Blinding Lights", artist: "The Weeknd", album: "After Hours", duration: "3:22", youtubeId: "4NRXx6U8ABQ", image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+                        { id: 2, title: "Anti-Hero", artist: "Taylor Swift", album: "Midnights", duration: "3:21", youtubeId: "b1kbLwvqugk", image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" }
+                    ],
                     userPlaylists: [],
                     userFavorites: [],
                     recentTracks: [],
